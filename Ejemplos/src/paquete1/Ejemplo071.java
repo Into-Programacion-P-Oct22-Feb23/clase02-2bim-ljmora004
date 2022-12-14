@@ -8,7 +8,6 @@ package paquete1;
 import java.util.Scanner;
 
 // Luis Mora A.
-
 public class Ejemplo071 {
 
     /**
@@ -22,7 +21,7 @@ public class Ejemplo071 {
         String mensaje = "";
         // arreglo de tipo entero
         int[] arreglo1 = new int[5];
-        
+
         // Se asigna valores al arreglo, pidiendo valores por teclado
         // se usa un ciclo repetitivo
         for (int i = 0; i < arreglo1.length; i++) {
@@ -31,18 +30,19 @@ public class Ejemplo071 {
             // se asigna la variable dato a la posición del arreglo
             // de acuerdo al valor de i
             arreglo1[i] = dato;
-            mensaje = String.format("%s%d\n", mensaje, arreglo1[i]);
+
         }
-        
+
         // Se hace uso del ciclo repetitivo for para recorrer el arreglo
         for (int i = 0; i < arreglo1.length; i++) {
             // agrego el valor de la posición del arreglo a la variable
             // acumuladora  suma
+            mensaje = String.format("%s%d\n", mensaje, arreglo1[i]);
             suma = suma + arreglo1[i];
         }
-        
+
         System.out.printf("La suma de los valores del arreglo\n%ses: %d\n", mensaje, suma);
-        
+
     }
 
 }
